@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lit-grid demo</title>
+    <script type="module" src="./src/lit-grid.js"></script>
+</head>
+<body>
+    <lit-grid id="grid"></lit-grid>
+    <script>
+        const gridEl = document.getElementById("grid");
+        gridEl.data = [
+            { name: "Laura", email: "laura@email.com", city: "Syracuse", zipCode: 13222 },
+            { name: "Tricia", email: "tricia@email.com", city: "Jacksonville", zipCode: 13223 },
+            { name: "Maria", email: "maria@email.com", city: "Atlanta", zipCode: 13233 },
+            { name: "Grecia", email: "grecia@email.com", city: "Syracuse", zipCode: 13223 },
+        ];
+        gridEl.columns = [
+            {columnName: "Name", property: "name", isSelected: false},
+            {columnName: "Email", property: "email", isSelected: false},
+            {columnName: "City", property: "city", isSelected: false},
+            {columnName: "Zip Code", property: "zipCode", isSelected: false}
+        ];
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "lit-grid",
+  "version": "1.0.0",
+  "description": "Lit-Element implementation of a grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose R. Perera Morales",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  }
+}
